@@ -1,0 +1,33 @@
+2020-07-01 09:11:31.034  INFO 18328 --- [main] com.gc.vblog.VblogApplicationTests       : Starting VblogApplicationTests on LAPTOP-3IS10U53 with PID 18328 (started by gc in C:\Users\gc\Desktop\v-blog\vblog)
+2020-07-01 09:11:31.035  INFO 18328 --- [main] com.gc.vblog.VblogApplicationTests       : No active profile set, falling back to default profiles: default
+2020-07-01 09:11:31.677  WARN 18328 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:11:32.761  INFO 18328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:11:32.875  INFO 18328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:11:33.049  INFO 18328 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:11:33.050  INFO 18328 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:11:33.051  INFO 18328 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:11:33.053  INFO 18328 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:11:33.191  INFO 18328 --- [main] com.gc.vblog.VblogApplicationTests       : Started VblogApplicationTests in 2.411 seconds (JVM running for 3.281)
+2020-07-01 09:11:33.485  INFO 18328 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:14:46.037  INFO 24660 --- [main] com.gc.vblog.VblogApplicationTests       : Starting VblogApplicationTests on LAPTOP-3IS10U53 with PID 24660 (started by gc in C:\Users\gc\Desktop\v-blog\vblog)
+2020-07-01 09:14:46.038  INFO 24660 --- [main] com.gc.vblog.VblogApplicationTests       : No active profile set, falling back to default profiles: default
+2020-07-01 09:14:46.706  WARN 24660 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:14:47.851  INFO 24660 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:14:47.950  INFO 24660 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:14:48.123  INFO 24660 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:14:48.124  INFO 24660 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:14:48.125  INFO 24660 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:14:48.127  INFO 24660 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:14:48.254  INFO 24660 --- [main] com.gc.vblog.VblogApplicationTests       : Started VblogApplicationTests in 2.476 seconds (JVM running for 3.326)
+2020-07-01 09:14:48.482  INFO 24660 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:21:59.991  INFO 2520 --- [main] com.gc.vblog.VblogApplicationTests       : Starting VblogApplicationTests on LAPTOP-3IS10U53 with PID 2520 (started by gc in C:\Users\gc\Desktop\v-blog\vblog)
+2020-07-01 09:21:59.992  INFO 2520 --- [main] com.gc.vblog.VblogApplicationTests       : No active profile set, falling back to default profiles: default
+2020-07-01 09:22:00.727  WARN 2520 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:22:01.835  INFO 2520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:22:02.059  INFO 2520 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:22:02.291  INFO 2520 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:22:02.292  INFO 2520 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:22:02.294  INFO 2520 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:22:02.296  INFO 2520 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:22:02.478  INFO 2520 --- [main] com.gc.vblog.VblogApplicationTests       : Started VblogApplicationTests in 2.809 seconds (JVM running for 3.646)
+2020-07-01 09:22:02.784  INFO 2520 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

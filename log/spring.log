@@ -1,0 +1,833 @@
+2020-07-01 09:02:20.478  INFO 24112 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 24112 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:02:20.483  INFO 24112 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:02:20.553  INFO 24112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 09:02:20.553  INFO 24112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 09:02:21.257  WARN 24112 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:02:21.767  INFO 24112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:02:21.775  INFO 24112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:02:21.775  INFO 24112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:02:21.849  INFO 24112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:02:21.850  INFO 24112 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1296 ms
+2020-07-01 09:02:22.170  INFO 24112 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:02:22.293  INFO 24112 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:02:22.294  INFO 24112 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:02:22.295  INFO 24112 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:02:22.297  INFO 24112 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:02:22.303  WARN 24112 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+2020-07-01 09:02:22.304  INFO 24112 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:02:22.306  INFO 24112 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-01 09:02:22.316  INFO 24112 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-01 09:02:22.325 ERROR 24112 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.gc.vblog.VblogApplication.main(VblogApplication.java:11) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_221]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/springframework/boot/bind/RelaxedPropertyResolver;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_221]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_221]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_221]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedPropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_221]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_221]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_221]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_221]
+	... 30 common frames omitted
+
+2020-07-01 09:04:00.388  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 19384 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:04:00.391  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:04:00.450  INFO 19384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 09:04:00.450  INFO 19384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 09:04:00.985  WARN 19384 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:04:01.449  INFO 19384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:04:01.458  INFO 19384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:04:01.458  INFO 19384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:04:01.537  INFO 19384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:04:01.537  INFO 19384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1087 ms
+2020-07-01 09:04:01.846  INFO 19384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:04:01.960  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:04:01.961  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:04:01.961  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:04:01.962  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:04:02.026  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-07-01 09:04:02.038  INFO 19384 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-07-01 09:04:02.038  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2020-07-01 09:04:02.039  INFO 19384 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-07-01 09:04:02.040  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-07-01 09:04:02.040  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-07-01 09:04:02.040  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2020-07-01 09:04:02.040  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@740dfe00
+2020-07-01 09:04:02.134  INFO 19384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:04:02.152  INFO 19384 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-07-01 09:04:02.152  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-07-01 09:04:02.178  INFO 19384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:04:02.182  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.165 seconds (JVM running for 2.933)
+2020-07-01 09:05:15.889  INFO 19384 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-07-01 09:05:15.892  INFO 19384 --- [Thread-9] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-07-01 09:05:15.893  INFO 19384 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-07-01 09:05:15.893  INFO 19384 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-07-01 09:05:15.893  INFO 19384 --- [Thread-9] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-07-01 09:05:15.894  INFO 19384 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:05:16.262  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 19384 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:05:16.262  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:05:16.416  WARN 19384 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:05:16.455  WARN 19384 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog.dao]' package. Please check your configuration.
+2020-07-01 09:05:16.514  INFO 19384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:05:16.514  INFO 19384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:05:16.514  INFO 19384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:05:16.529  INFO 19384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:05:16.530  INFO 19384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 265 ms
+2020-07-01 09:05:16.585  INFO 19384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:05:16.598  INFO 19384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:05:16.641  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:05:16.641  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:05:16.641  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:05:16.642  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:05:16.685  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2020-07-01 09:05:16.687  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@27a8e1c
+2020-07-01 09:05:16.704  INFO 19384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:05:16.723  INFO 19384 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-07-01 09:05:16.723  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-07-01 09:05:16.733  INFO 19384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:05:16.733  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.502 seconds (JVM running for 77.484)
+2020-07-01 09:05:16.734  INFO 19384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 09:05:18.525  INFO 19384 --- [Thread-16] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-07-01 09:05:18.528  INFO 19384 --- [Thread-16] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2020-07-01 09:05:18.528  INFO 19384 --- [Thread-16] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2020-07-01 09:05:18.529  INFO 19384 --- [Thread-16] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2020-07-01 09:05:18.529  INFO 19384 --- [Thread-16] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2020-07-01 09:05:18.531  INFO 19384 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:05:18.858  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 19384 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:05:18.859  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:05:18.994  WARN 19384 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:05:19.099  INFO 19384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:05:19.100  INFO 19384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:05:19.101  INFO 19384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:05:19.112  INFO 19384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:05:19.112  INFO 19384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 251 ms
+2020-07-01 09:05:19.183  INFO 19384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:05:19.201  INFO 19384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:05:19.228  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:05:19.228  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:05:19.228  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:05:19.228  INFO 19384 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:05:19.251  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2020-07-01 09:05:19.252  INFO 19384 --- [restartedMain] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-07-01 09:05:19.253  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2020-07-01 09:05:19.253  INFO 19384 --- [restartedMain] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2020-07-01 09:05:19.253  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-07-01 09:05:19.253  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2020-07-01 09:05:19.253  INFO 19384 --- [restartedMain] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2020-07-01 09:05:19.253  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5764e7b5
+2020-07-01 09:05:19.264  INFO 19384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:05:19.272  INFO 19384 --- [restartedMain] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2020-07-01 09:05:19.272  INFO 19384 --- [restartedMain] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2020-07-01 09:05:19.281  INFO 19384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:05:19.281  INFO 19384 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.445 seconds (JVM running for 80.032)
+2020-07-01 09:05:19.282  INFO 19384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 09:05:19.515  INFO 19384 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 09:05:19.515  INFO 19384 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 09:05:19.523  INFO 19384 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-01 09:08:22.983  INFO 15904 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 15904 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:08:22.986  INFO 15904 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:08:23.051  INFO 15904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 09:08:23.052  INFO 15904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 09:08:23.588  WARN 15904 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:08:24.028  INFO 15904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:08:24.040  INFO 15904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:08:24.040  INFO 15904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:08:24.108  INFO 15904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:08:24.108  INFO 15904 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1056 ms
+2020-07-01 09:08:24.408  INFO 15904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:08:24.455  INFO 15904 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:08:24.511  INFO 15904 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:08:24.511  INFO 15904 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:08:24.511  INFO 15904 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:08:24.512  INFO 15904 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:08:24.570  INFO 15904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:08:24.678  INFO 15904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:08:24.682  INFO 15904 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.022 seconds (JVM running for 2.704)
+2020-07-01 09:08:30.660  INFO 15904 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 09:08:30.660  INFO 15904 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 09:08:30.665  INFO 15904 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-01 09:09:59.922  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 16524 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:09:59.924  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:09:59.970  INFO 16524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 09:09:59.970  INFO 16524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 09:10:00.582  WARN 16524 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:10:01.008  INFO 16524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:10:01.014  INFO 16524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:10:01.015  INFO 16524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:10:01.079  INFO 16524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:10:01.079  INFO 16524 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1109 ms
+2020-07-01 09:10:01.344  INFO 16524 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:10:01.392  INFO 16524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:10:01.449  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:10:01.450  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:10:01.450  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:10:01.451  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:10:01.506  INFO 16524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:10:01.588  INFO 16524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:10:01.591  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 1.953 seconds (JVM running for 2.607)
+2020-07-01 09:10:11.872  INFO 16524 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 09:10:11.873  INFO 16524 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 09:10:11.878  INFO 16524 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 09:11:26.415  INFO 16524 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:11:26.684  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 16524 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:11:26.684  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:11:26.872  WARN 16524 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:11:26.990  INFO 16524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:11:26.990  INFO 16524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:11:26.991  INFO 16524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:11:27.008  INFO 16524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:11:27.008  INFO 16524 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 322 ms
+2020-07-01 09:11:27.101  INFO 16524 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:11:27.117  INFO 16524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:11:27.150  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:11:27.150  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:11:27.150  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:11:27.151  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:11:27.184  INFO 16524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:11:27.212  INFO 16524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:11:27.214  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.554 seconds (JVM running for 88.23)
+2020-07-01 09:11:27.217  INFO 16524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 09:11:28.996  INFO 16524 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:11:29.320  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 16524 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:11:29.320  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:11:29.449  WARN 16524 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:11:29.534  INFO 16524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:11:29.534  INFO 16524 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:11:29.534  INFO 16524 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:11:29.546  INFO 16524 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:11:29.546  INFO 16524 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 224 ms
+2020-07-01 09:11:29.621  INFO 16524 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:11:29.637  INFO 16524 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:11:29.669  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:11:29.669  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:11:29.670  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:11:29.670  INFO 16524 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:11:29.702  INFO 16524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:11:29.724  INFO 16524 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:11:29.725  INFO 16524 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.425 seconds (JVM running for 90.741)
+2020-07-01 09:11:29.727  INFO 16524 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 09:20:12.429  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 9140 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:20:12.431  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:20:12.484  INFO 9140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 09:20:12.484  INFO 9140 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 09:20:13.069  WARN 9140 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:20:13.568  INFO 9140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:20:13.576  INFO 9140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:20:13.576  INFO 9140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:20:13.650  INFO 9140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:20:13.651  INFO 9140 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1167 ms
+2020-07-01 09:20:13.977  INFO 9140 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:20:14.033  INFO 9140 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:20:14.120  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:20:14.121  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:20:14.121  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:20:14.122  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:20:14.196  INFO 9140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:20:14.331  INFO 9140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:20:14.335  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.211 seconds (JVM running for 2.914)
+2020-07-01 09:20:28.136  INFO 9140 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 09:20:28.137  INFO 9140 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 09:20:28.141  INFO 9140 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 09:20:35.713  INFO 9140 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:20:36.280  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 9140 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:20:36.280  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:20:36.408  WARN 9140 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:20:36.493  INFO 9140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:20:36.494  INFO 9140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:20:36.494  INFO 9140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:20:36.505  INFO 9140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:20:36.505  INFO 9140 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 223 ms
+2020-07-01 09:20:36.576  INFO 9140 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:20:36.585  INFO 9140 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:20:36.603  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:20:36.603  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:20:36.603  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:20:36.604  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:20:36.623  INFO 9140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:20:36.639  INFO 9140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:20:36.640  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.382 seconds (JVM running for 25.219)
+2020-07-01 09:20:36.641  INFO 9140 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 09:21:59.508  INFO 9140 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:21:59.859  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 9140 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:21:59.860  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:22:00.073  WARN 9140 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:22:00.223  INFO 9140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:22:00.224  INFO 9140 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:22:00.225  INFO 9140 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:22:00.246  INFO 9140 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:22:00.246  INFO 9140 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 383 ms
+2020-07-01 09:22:00.373  INFO 9140 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:22:00.389  INFO 9140 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:22:00.419  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:22:00.419  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:22:00.419  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:22:00.419  INFO 9140 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:22:00.451  INFO 9140 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:22:00.471  INFO 9140 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:22:00.472  INFO 9140 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.647 seconds (JVM running for 109.051)
+2020-07-01 09:22:00.473  INFO 9140 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 09:25:10.938  INFO 16192 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 16192 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 09:25:10.941  INFO 16192 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 09:25:10.994  INFO 16192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 09:25:10.994  INFO 16192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 09:25:11.541  WARN 16192 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 09:25:11.974  INFO 16192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 09:25:11.980  INFO 16192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 09:25:11.981  INFO 16192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 09:25:12.046  INFO 16192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 09:25:12.046  INFO 16192 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1052 ms
+2020-07-01 09:25:12.309  INFO 16192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 09:25:12.355  INFO 16192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 09:25:12.408  INFO 16192 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 09:25:12.409  INFO 16192 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 09:25:12.409  INFO 16192 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 09:25:12.410  INFO 16192 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 09:25:12.469  INFO 16192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 09:25:12.583  INFO 16192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 09:25:12.587  INFO 16192 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 1.931 seconds (JVM running for 2.647)
+2020-07-01 09:25:27.442  INFO 16192 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 09:25:27.442  INFO 16192 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 09:25:27.446  INFO 16192 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 10:31:06.086  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 26132 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 10:31:06.089  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 10:31:06.136  INFO 26132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 10:31:06.136  INFO 26132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 10:31:06.809  WARN 26132 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 10:31:07.335  INFO 26132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 10:31:07.344  INFO 26132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 10:31:07.345  INFO 26132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 10:31:07.426  INFO 26132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 10:31:07.426  INFO 26132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1290 ms
+2020-07-01 10:31:07.777  INFO 26132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:31:07.831  INFO 26132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 10:31:07.896  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 10:31:07.897  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 10:31:07.898  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 10:31:07.899  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 10:31:07.963  INFO 26132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 10:31:08.004  INFO 26132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 10:31:08.078  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.312 seconds (JVM running for 3.234)
+2020-07-01 10:31:25.504  INFO 26132 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 10:31:25.505  INFO 26132 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 10:31:25.510  INFO 26132 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-01 10:31:26.438  INFO 26132 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:31:26.824  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 26132 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 10:31:26.825  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 10:31:27.023  WARN 26132 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 10:31:27.193  INFO 26132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 10:31:27.194  INFO 26132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 10:31:27.199  INFO 26132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 10:31:27.240  INFO 26132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 10:31:27.241  INFO 26132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 414 ms
+2020-07-01 10:31:27.369  INFO 26132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:31:27.393  INFO 26132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 10:31:27.418  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 10:31:27.418  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 10:31:27.419  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 10:31:27.419  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 10:31:27.458  INFO 26132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 10:31:27.481  INFO 26132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 10:31:27.481  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.679 seconds (JVM running for 22.637)
+2020-07-01 10:31:27.483  INFO 26132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 10:31:39.783  INFO 26132 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 10:31:39.784  INFO 26132 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 10:31:39.792  INFO 26132 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-01 10:31:40.907  INFO 26132 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:31:41.241  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 26132 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 10:31:41.241  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 10:31:41.379  WARN 26132 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 10:31:41.479  INFO 26132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 10:31:41.480  INFO 26132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 10:31:41.480  INFO 26132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 10:31:41.493  INFO 26132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 10:31:41.493  INFO 26132 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 250 ms
+2020-07-01 10:31:41.595  INFO 26132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:31:41.611  INFO 26132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 10:31:41.641  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 10:31:41.641  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 10:31:41.642  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 10:31:41.642  INFO 26132 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 10:31:41.669  INFO 26132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 10:31:41.692  INFO 26132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 10:31:41.693  INFO 26132 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.476 seconds (JVM running for 36.849)
+2020-07-01 10:31:41.695  INFO 26132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 10:31:53.960  INFO 26132 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 10:31:53.961  INFO 26132 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 10:31:53.969  INFO 26132 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-01 10:34:39.791  INFO 14716 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 14716 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 10:34:39.795  INFO 14716 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 10:34:39.860  INFO 14716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 10:34:39.860  INFO 14716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 10:34:40.538  WARN 14716 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 10:34:41.061  INFO 14716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 10:34:41.068  INFO 14716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 10:34:41.068  INFO 14716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 10:34:41.146  INFO 14716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 10:34:41.146  INFO 14716 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1286 ms
+2020-07-01 10:34:41.532  INFO 14716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:34:41.583  INFO 14716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 10:34:41.661  INFO 14716 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 10:34:41.662  INFO 14716 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 10:34:41.662  INFO 14716 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 10:34:41.664  INFO 14716 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 10:34:41.734  INFO 14716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 10:34:41.849  INFO 14716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 10:34:41.853  INFO 14716 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.428 seconds (JVM running for 3.153)
+2020-07-01 10:34:53.655  INFO 14716 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 10:34:53.656  INFO 14716 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 10:34:53.660  INFO 14716 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 10:53:27.336  INFO 104 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 104 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 10:53:27.339  INFO 104 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 10:53:27.389  INFO 104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 10:53:27.389  INFO 104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 10:53:27.930  WARN 104 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 10:53:28.419  INFO 104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 10:53:28.428  INFO 104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 10:53:28.429  INFO 104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 10:53:28.502  INFO 104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 10:53:28.502  INFO 104 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1113 ms
+2020-07-01 10:53:28.808  INFO 104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 10:53:28.860  INFO 104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 10:53:28.919  INFO 104 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 10:53:28.920  INFO 104 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 10:53:28.920  INFO 104 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 10:53:28.921  INFO 104 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 10:53:28.986  INFO 104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 10:53:29.073  INFO 104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 10:53:29.076  INFO 104 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.111 seconds (JVM running for 3.555)
+2020-07-01 10:53:46.081  INFO 104 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 10:53:46.082  INFO 104 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 10:53:46.086  INFO 104 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 11:01:23.670  INFO 7852 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 7852 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 11:01:23.674  INFO 7852 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 11:01:23.740  INFO 7852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 11:01:23.740  INFO 7852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 11:01:24.291  WARN 7852 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 11:01:24.734  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 11:01:24.741  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 11:01:24.741  INFO 7852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 11:01:24.806  INFO 7852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 11:01:24.806  INFO 7852 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1065 ms
+2020-07-01 11:01:25.084  INFO 7852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 11:01:25.131  INFO 7852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 11:01:25.187  INFO 7852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 11:01:25.187  INFO 7852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 11:01:25.188  INFO 7852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 11:01:25.189  INFO 7852 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 11:01:25.249  INFO 7852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 11:01:25.361  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 11:01:25.364  INFO 7852 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.008 seconds (JVM running for 2.731)
+2020-07-01 11:01:32.853  INFO 7852 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 11:01:32.853  INFO 7852 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 11:01:32.859  INFO 7852 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-01 11:01:43.747  INFO 8184 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 8184 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 11:01:43.750  INFO 8184 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 11:01:43.806  INFO 8184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 11:01:43.806  INFO 8184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 11:01:44.368  WARN 8184 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 11:01:44.829  INFO 8184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 11:01:44.836  INFO 8184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 11:01:44.837  INFO 8184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 11:01:44.903  INFO 8184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 11:01:44.904  INFO 8184 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1098 ms
+2020-07-01 11:01:45.182  INFO 8184 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 11:01:45.229  INFO 8184 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 11:01:45.285  INFO 8184 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 11:01:45.286  INFO 8184 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 11:01:45.286  INFO 8184 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 11:01:45.287  INFO 8184 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 11:01:45.347  INFO 8184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 11:01:45.465  INFO 8184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 11:01:45.468  INFO 8184 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.051 seconds (JVM running for 2.795)
+2020-07-01 11:01:49.086  INFO 8184 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 11:01:49.087  INFO 8184 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 11:01:49.092  INFO 8184 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-01 11:18:18.258  INFO 21768 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 21768 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 11:18:18.261  INFO 21768 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 11:18:18.317  INFO 21768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 11:18:18.317  INFO 21768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 11:18:18.958  WARN 21768 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 11:18:19.420  INFO 21768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 11:18:19.427  INFO 21768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 11:18:19.428  INFO 21768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 11:18:19.495  INFO 21768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 11:18:19.495  INFO 21768 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1177 ms
+2020-07-01 11:18:19.782  INFO 21768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 11:18:19.829  INFO 21768 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 11:18:19.885  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 11:18:19.885  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 11:18:19.886  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 11:18:19.887  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 11:18:19.945  INFO 21768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 11:18:20.028  INFO 21768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 11:18:20.031  INFO 21768 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.067 seconds (JVM running for 2.77)
+2020-07-01 11:18:29.130  INFO 21768 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 11:18:29.130  INFO 21768 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 11:18:29.135  INFO 21768 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-01 11:18:40.541  INFO 21768 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 11:18:40.849  INFO 21768 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 21768 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 11:18:40.849  INFO 21768 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 11:18:40.988  WARN 21768 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 11:18:41.077  INFO 21768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 11:18:41.078  INFO 21768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 11:18:41.078  INFO 21768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 11:18:41.103  INFO 21768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 11:18:41.103  INFO 21768 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 252 ms
+2020-07-01 11:18:41.183  INFO 21768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 11:18:41.194  INFO 21768 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 11:18:41.212  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 11:18:41.212  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 11:18:41.213  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 11:18:41.213  INFO 21768 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 11:18:41.234  INFO 21768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 11:18:41.249  INFO 21768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 11:18:41.250  INFO 21768 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.425 seconds (JVM running for 23.989)
+2020-07-01 11:18:41.251  INFO 21768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 11:18:45.495  INFO 21768 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 11:18:45.496  INFO 21768 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 11:18:45.502  INFO 21768 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-01 12:20:19.710  INFO 21632 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 21632 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 12:20:19.713  INFO 21632 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 12:20:19.766  INFO 21632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 12:20:19.767  INFO 21632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 12:20:20.371  WARN 21632 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 12:20:20.800  INFO 21632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 12:20:20.807  INFO 21632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 12:20:20.808  INFO 21632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 12:20:20.873  INFO 21632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 12:20:20.873  INFO 21632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1106 ms
+2020-07-01 12:20:21.140  INFO 21632 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:20:21.185  INFO 21632 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 12:20:21.240  INFO 21632 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 12:20:21.241  INFO 21632 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 12:20:21.241  INFO 21632 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 12:20:21.242  INFO 21632 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 12:20:21.299  INFO 21632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 12:20:21.400  INFO 21632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 12:20:21.402  INFO 21632 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.002 seconds (JVM running for 2.626)
+2020-07-01 12:20:39.926  INFO 21632 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 12:20:39.926  INFO 21632 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 12:20:39.930  INFO 21632 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 12:21:09.115  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 13644 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 12:21:09.118  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 12:21:09.175  INFO 13644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 12:21:09.176  INFO 13644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 12:21:09.731  WARN 13644 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 12:21:10.179  INFO 13644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 12:21:10.186  INFO 13644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 12:21:10.186  INFO 13644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 12:21:10.249  INFO 13644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 12:21:10.249  INFO 13644 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1073 ms
+2020-07-01 12:21:10.523  INFO 13644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:21:10.569  INFO 13644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 12:21:10.625  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 12:21:10.625  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 12:21:10.626  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 12:21:10.628  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 12:21:10.684  INFO 13644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 12:21:10.792  INFO 13644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 12:21:10.795  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 1.993 seconds (JVM running for 2.665)
+2020-07-01 12:21:24.145  INFO 13644 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:21:24.407  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 13644 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 12:21:24.407  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 12:21:24.540  WARN 13644 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 12:21:24.625  INFO 13644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 12:21:24.626  INFO 13644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 12:21:24.626  INFO 13644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 12:21:24.640  INFO 13644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 12:21:24.640  INFO 13644 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 229 ms
+2020-07-01 12:21:24.714  INFO 13644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:21:24.723  INFO 13644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 12:21:24.741  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 12:21:24.742  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 12:21:24.742  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 12:21:24.742  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 12:21:24.763  INFO 13644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 12:21:24.777  INFO 13644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 12:21:24.778  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.395 seconds (JVM running for 16.649)
+2020-07-01 12:21:24.779  INFO 13644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 12:21:47.399  INFO 13644 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 12:21:47.400  INFO 13644 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 12:21:47.407  INFO 13644 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-01 12:22:03.288  INFO 13644 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:22:03.576  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 13644 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 12:22:03.577  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 12:22:03.718  WARN 13644 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 12:22:03.841  INFO 13644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 12:22:03.842  INFO 13644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 12:22:03.842  INFO 13644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 12:22:03.855  INFO 13644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 12:22:03.855  INFO 13644 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 274 ms
+2020-07-01 12:22:03.921  INFO 13644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:22:03.930  INFO 13644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 12:22:03.946  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 12:22:03.946  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 12:22:03.946  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 12:22:03.946  INFO 13644 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 12:22:03.966  INFO 13644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 12:22:03.980  INFO 13644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 12:22:03.981  INFO 13644 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.432 seconds (JVM running for 55.851)
+2020-07-01 12:22:03.982  INFO 13644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 12:22:15.933  INFO 13644 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 12:22:15.935  INFO 13644 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 12:22:15.940  INFO 13644 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-01 12:38:11.901  INFO 12680 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 12680 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 12:38:11.905  INFO 12680 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 12:38:11.968  INFO 12680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 12:38:11.968  INFO 12680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 12:38:12.592  WARN 12680 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 12:38:13.068  INFO 12680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 12:38:13.075  INFO 12680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 12:38:13.075  INFO 12680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 12:38:13.145  INFO 12680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 12:38:13.145  INFO 12680 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1176 ms
+2020-07-01 12:38:13.435  INFO 12680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:38:13.489  INFO 12680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 12:38:13.549  INFO 12680 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 12:38:13.550  INFO 12680 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 12:38:13.550  INFO 12680 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 12:38:13.551  INFO 12680 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 12:38:13.611  INFO 12680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 12:38:13.729  INFO 12680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 12:38:13.732  INFO 12680 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 2.264 seconds (JVM running for 3.075)
+2020-07-01 12:39:50.875  INFO 12680 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 12:39:50.876  INFO 12680 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 12:39:50.881  INFO 12680 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-01 12:40:22.152  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 12:40:22.155  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 12:40:22.203  INFO 11612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-01 12:40:22.204  INFO 11612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-01 12:40:22.745  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 12:40:23.200  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 12:40:23.206  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 12:40:23.207  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 12:40:23.270  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 12:40:23.270  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1066 ms
+2020-07-01 12:40:23.548  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 12:40:23.598  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 12:40:23.651  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 12:40:23.651  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 12:40:23.651  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 12:40:23.652  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 12:40:23.708  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 12:40:23.817  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 12:40:23.820  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 1.987 seconds (JVM running for 2.639)
+2020-07-01 12:40:35.286  INFO 11612 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 12:40:35.286  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 12:40:35.293  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-01 13:10:01.112  INFO 11612 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:10:01.614  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:10:01.615  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:10:01.840  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:10:01.990  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:10:01.990  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:10:01.991  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:10:02.309  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:10:02.309  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 691 ms
+2020-07-01 13:10:02.402  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:10:02.414  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:10:02.438  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:10:02.438  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:10:02.438  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:10:02.438  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:10:02.467  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:10:02.485  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:10:02.486  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.912 seconds (JVM running for 1781.305)
+2020-07-01 13:10:02.487  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:10:07.809  INFO 11612 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:10:07.810  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:10:07.826  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-07-01 13:10:56.231  INFO 11612 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:10:56.506  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:10:56.506  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:10:56.651  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:10:56.756  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:10:56.756  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:10:56.756  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:10:56.768  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:10:56.768  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 260 ms
+2020-07-01 13:10:56.835  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:10:56.847  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:10:56.863  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:10:56.863  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:10:56.863  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:10:56.863  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:10:56.883  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:10:56.898  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:10:56.899  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.418 seconds (JVM running for 1835.718)
+2020-07-01 13:10:56.900  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:11:06.160  INFO 11612 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:11:06.161  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:11:06.166  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 13:11:07.351  INFO 11612 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:11:07.587  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:11:07.587  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:11:07.709  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:11:07.786  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:11:07.787  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:11:07.787  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:11:07.797  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:11:07.798  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 210 ms
+2020-07-01 13:11:07.859  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:11:07.869  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:11:07.884  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:11:07.884  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:11:07.884  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:11:07.884  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:11:07.903  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:11:07.917  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:11:07.918  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.352 seconds (JVM running for 1846.737)
+2020-07-01 13:11:07.919  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:11:07.921  INFO 11612 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:11:07.922  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:11:07.926  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-01 13:14:08.429  INFO 11612 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:14:08.717  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:14:08.717  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:14:08.840  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:14:08.918  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:14:08.919  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:14:08.919  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:14:08.929  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:14:08.929  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 210 ms
+2020-07-01 13:14:08.990  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:14:08.999  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:14:09.016  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:14:09.016  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:14:09.016  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:14:09.016  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:14:09.034  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:14:09.048  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:14:09.049  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.351 seconds (JVM running for 2027.868)
+2020-07-01 13:14:09.050  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:14:09.696  INFO 11612 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:14:09.697  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:14:09.699  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-07-01 13:23:33.770  INFO 11612 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:23:34.022  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:23:34.022  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:23:34.157  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:23:34.246  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:23:34.247  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:23:34.247  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:23:34.262  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:23:34.262  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 237 ms
+2020-07-01 13:23:34.327  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:23:34.336  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:23:34.352  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:23:34.352  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:23:34.352  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:23:34.352  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:23:34.371  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:23:34.386  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:23:34.387  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.386 seconds (JVM running for 2593.206)
+2020-07-01 13:23:34.388  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:23:45.506  INFO 11612 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:23:45.506  INFO 11612 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:23:45.508  INFO 11612 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-07-01 13:23:46.882  INFO 11612 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:23:47.126  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:23:47.127  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:23:47.248  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:23:47.323  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:23:47.323  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:23:47.324  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:23:47.334  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:23:47.335  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 207 ms
+2020-07-01 13:23:47.393  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:23:47.403  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:23:47.418  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:23:47.418  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:23:47.418  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:23:47.418  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:23:47.436  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:23:47.449  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:23:47.450  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.342 seconds (JVM running for 2606.269)
+2020-07-01 13:23:47.451  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:27:14.116  INFO 11612 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:27:14.117  INFO 11612 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:27:14.120  INFO 11612 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-07-01 13:27:15.389  INFO 11612 --- [Thread-41] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:27:15.612  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Starting VblogApplication on LAPTOP-3IS10U53 with PID 11612 (C:\Users\gc\Desktop\v-blog\vblog\target\classes started by gc in C:\Users\gc\Desktop\v-blog)
+2020-07-01 13:27:15.613  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : No active profile set, falling back to default profiles: default
+2020-07-01 13:27:15.740  WARN 11612 --- [restartedMain] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gc.vblog]' package. Please check your configuration.
+2020-07-01 13:27:15.816  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-07-01 13:27:15.817  INFO 11612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-01 13:27:15.817  INFO 11612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-07-01 13:27:15.827  INFO 11612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-01 13:27:15.827  INFO 11612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 213 ms
+2020-07-01 13:27:15.887  INFO 11612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 13:27:15.896  INFO 11612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-07-01 13:27:15.912  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-01 13:27:15.912  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-01 13:27:15.912  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-01 13:27:15.912  INFO 11612 --- [restartedMain] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-07-01 13:27:15.930  INFO 11612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-01 13:27:15.945  INFO 11612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-07-01 13:27:15.946  INFO 11612 --- [restartedMain] com.gc.vblog.VblogApplication            : Started VblogApplication in 0.357 seconds (JVM running for 2814.765)
+2020-07-01 13:27:15.947  INFO 11612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-01 13:27:16.037  INFO 11612 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-01 13:27:16.038  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-01 13:27:16.039  INFO 11612 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
