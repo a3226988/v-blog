@@ -1,14 +1,12 @@
 package com.gc.vblog.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 import tk.mybatis.mapper.annotation.KeySql;
 import tk.mybatis.mapper.code.IdentityDialect;
 
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -17,6 +15,7 @@ import java.util.Date;
  * 铁甲依然在
  */
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
     @Id
     @KeySql(dialect = IdentityDialect.MYSQL)
@@ -24,7 +23,7 @@ public class User {
     private String username;
     private String password;
     private Integer status;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GTM+8")
     private Date createdate;
     private String email;
 }

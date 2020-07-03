@@ -56,4 +56,5 @@ public class UserController {
         }
         return "redirect:"+blogConstant.getActive_fail_url();
     }
+
 }

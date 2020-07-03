@@ -1,5 +1,6 @@
 package com.gc.vblog.service;
 
+import com.gc.vblog.commons.RedisKeyConstant;
 import com.gc.vblog.dao.UserDao;
 import com.gc.vblog.entity.User;
 import com.gc.vblog.util.EmailUtil;
@@ -59,7 +60,7 @@ public class UserService {
             //发送验证链接
             emailUtil.sendVertifyMsg("邮箱验证",msg,user.getEmail());
             //将验证码存入redis,并设置5分钟到期,或者选择存入application中，但是无法设置过期时间
-            valueOperations.set("verfyCode:"+user.getId(),verifyCode,5, TimeUnit.MINUTES);
+            valueOperations.set(RedisKeyConstant.VERIFYCODE +user.getId(),verifyCode,5, TimeUnit.MINUTES);
             return true;
         }
         return false;
@@ -71,17 +72,18 @@ public class UserService {
      * @param verifyCode 激活码
      */
     public boolean activateUser(User user,String verifyCode){
+        String key = RedisKeyConstant.VERIFYCODE+user.getId();
         //判断改用户对应的激活码是否存在
-        if(redisTemplate.hasKey("verfyCode:"+user.getId())){
+        if(redisTemplate.hasKey(key)){
             ValueOperations<String,String> valueOperations = redisTemplate.opsForValue();
             //取出改用户对应的激活码
-            String vcode = valueOperations.get("verfyCode:"+user.getId());
+            String vcode = valueOperations.get(key);
             //验证激活码是否正确
             if(vcode.equals(verifyCode)){
                 user.setStatus(1);
                 if(userDao.updateByPrimaryKeySelective(user)>0){
                     //激活成功后删除缓存里的数据
-                    redisTemplate.delete("verfyCode:"+user.getId());
+                    redisTemplate.delete(key);
                     return true;
                 }
             }

@@ -7,9 +7,11 @@ import com.gc.vblog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 文章控制器类
@@ -36,10 +38,18 @@ public class ArticleController {
     }
 
     @GetMapping("{id}")
-    public Result detail(@PathVariable("id") Integer id){
-        Article article =  articleService.articleDetail(id);
-        if(article!=null)
-            return Result.success(article);
+    public Result detail(@PathVariable("id") Integer id, HttpServletRequest request){
+        String ip = request.getRemoteAddr();
+        System.out.println("ip:"+ip);
+        Map<String,Object> map =  articleService.articleDetail(id,ip);
+        if(map.get("status").equals(200)){
+            return Result.success(map);
+        }
         return Result.fail("文章加载失败！");
+    }
+
+    @RequestMapping("test")
+    public User test(User user){
+        return user;
     }
 }
