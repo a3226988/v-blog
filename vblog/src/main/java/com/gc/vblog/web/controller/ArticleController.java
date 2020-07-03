@@ -2,11 +2,13 @@ package com.gc.vblog.web.controller;
 
 import com.gc.vblog.commons.Result;
 import com.gc.vblog.entity.Article;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.gc.vblog.entity.User;
+import com.gc.vblog.service.ArticleService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -18,17 +20,26 @@ import java.util.List;
 @RequestMapping("article")
 public class ArticleController {
 
-    String mdstr = "";
+    @Autowired
+    private ArticleService articleService;
 
     @PostMapping
-    public Result publish(Article article){
-        mdstr = article.getContent();
-        System.out.println(mdstr);
-        return Result.success();
+    public Result publish(Article article, HttpSession session){
+        article.setCreated(new Date());
+        article.setModified(new Date());
+        /*User user = (User) session.getAttribute("loginuser");
+        article.setUserId(user.getId());*/
+        article.setUserId(1);
+        if(articleService.saveAritcle(article))
+            return Result.success();
+        return Result.fail("发布失败");
     }
 
-    @GetMapping
-    public Result detail(){
-        return Result.success(mdstr);
+    @GetMapping("{id}")
+    public Result detail(@PathVariable("id") Integer id){
+        Article article =  articleService.articleDetail(id);
+        if(article!=null)
+            return Result.success(article);
+        return Result.fail("文章加载失败！");
     }
 }

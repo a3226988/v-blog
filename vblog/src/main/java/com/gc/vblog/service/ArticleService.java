@@ -29,6 +29,17 @@ public class ArticleService {
         return aritcleDao.selectAll();
     }
 
+    public boolean saveAritcle(Article aritcle){
+        if(aritcleDao.insertSelective(aritcle)>0){
+            return true;
+        }
+        return false;
+    }
+
+    public Article articleDetail(int id){
+        return aritcleDao.selectByPrimaryKey(id);
+    }
+
     public List<Article> queryArticleByUserid(int id){
         return null;
     }

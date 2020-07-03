@@ -1,6 +1,7 @@
 package com.gc.vblog.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -8,12 +9,28 @@ import org.springframework.stereotype.Component;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import javax.validation.Valid;
 import java.io.File;
 
 @Component
 public class EmailUtil {
     @Autowired
     private JavaMailSenderImpl javaMailSender;
+
+    @Value("${spring.mail.username}")
+    private String from;
+
+    public void sendVertifyMsg(String title,String msg,String to) throws MessagingException {
+        MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+        MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage,true);
+        mimeMessageHelper.setSubject(title);
+        mimeMessageHelper.setText(msg,true);
+        mimeMessageHelper.setTo(to);
+        mimeMessageHelper.setFrom(from);
+        javaMailSender.send(mimeMessage);
+    }
+
+
     //发送简单内容邮件
     public void sendSimpleMail(){
         SimpleMailMessage message = new SimpleMailMessage();
