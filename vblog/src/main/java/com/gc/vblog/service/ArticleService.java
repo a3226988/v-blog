@@ -7,10 +7,12 @@ import com.gc.vblog.entity.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.SetOperations;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,6 +35,12 @@ public class ArticleService {
 
     @Autowired
     private RedisTemplate<String,String> redisTemplate;
+
+    @Autowired
+    SetOperations setOperations;
+
+    @Autowired
+    ValueOperations valueOperations;
     /**
      * 查询测试
      * @return
@@ -43,8 +51,13 @@ public class ArticleService {
         return aritcleDao.selectAll();
     }
 
-    public boolean saveAritcle(Article aritcle){
-        if(aritcleDao.insertSelective(aritcle)>0){
+    /**
+     * 保存文章
+     * @param article
+     * @return
+     */
+    public boolean saveAritcle(Article article){
+        if(aritcleDao.insertSelective(article)>0){
             return true;
         }
         return false;
@@ -77,10 +90,10 @@ public class ArticleService {
         }
         //获取文章的浏览量
         String pv = valueOperations.get(RedisKeyConstant.PAGEVIEW+id);
-        //获取文章的点赞数，由于类型是list集合，需要ListOperations来操作
-        ListOperations listOperations = redisTemplate.opsForList();
+        //获取文章的点赞数，由于类型是set集合，需要SetOperations来操作
+        SetOperations setOperations = redisTemplate.opsForSet();
         //根据点赞记录的长度获取点赞数
-        long likenum = listOperations.size(RedisKeyConstant.LIKERECORD+id);
+        long likenum = setOperations.size(RedisKeyConstant.LIKERECORD+id);
         //将所有数据封装到map集合
         map.put("article",article);
         map.put("author",userDao.getUserInfo(article.getUserId()));
@@ -90,7 +103,38 @@ public class ArticleService {
         return map;
     }
 
+    /**
+     * 查询用户的文章
+     * @param id
+     * @return
+     */
     public List<Article> queryArticleByUserid(int id){
+
         return null;
+    }
+
+
+    /**
+     * 点赞
+     * @param articleId 文章ID
+     * @param userId  用户ID
+     * @return 点赞数
+     */
+    public long giveLike(int articleId,int userId){
+        String key = RedisKeyConstant.LIKERECORD+articleId;
+        setOperations.add(key,userId);
+        return setOperations.size(key);
+    }
+
+    /**
+     * 取消点赞
+     * @param articleId 文章ID
+     * @param userId  用户ID
+     * @return 点赞数
+     */
+    public long cancelLike(int articleId,int userId){
+        String key = RedisKeyConstant.LIKERECORD+articleId;
+        setOperations.remove(key,userId);
+        return setOperations.size(key);
     }
 }

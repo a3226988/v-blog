@@ -2,7 +2,6 @@ package com.gc.vblog.web.controller;
 
 import com.gc.vblog.commons.Result;
 import com.gc.vblog.entity.Article;
-import com.gc.vblog.entity.User;
 import com.gc.vblog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -48,8 +46,24 @@ public class ArticleController {
         return Result.fail("文章加载失败！");
     }
 
-    @RequestMapping("test")
-    public User test(User user){
-        return user;
+
+    /**
+     * 点赞
+     */
+    @GetMapping("like")
+    public Result giveLike(Integer articleId,HttpSession session,Integer userId){
+        /*User user = (User) session.getAttribute("loginuser");
+        article.setUserId(user.getId());*/
+        long num = articleService.giveLike(articleId,userId);
+        return Result.success(num);
+    }
+
+    /**
+     * 取消点赞
+     */
+    @GetMapping("canclelike")
+    public Result cancleLike(Integer articleId,Integer userId){
+        long num = articleService.cancelLike(articleId,userId);
+        return Result.success(num);
     }
 }
