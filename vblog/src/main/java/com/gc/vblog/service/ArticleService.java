@@ -37,10 +37,10 @@ public class ArticleService {
     private RedisTemplate<String,String> redisTemplate;
 
     @Autowired
-    SetOperations setOperations;
+    SetOperations<String,String> setOperations;
 
     @Autowired
-    ValueOperations valueOperations;
+    ValueOperations<String,String> valueOperations;
     /**
      * 查询测试
      * @return
@@ -122,7 +122,7 @@ public class ArticleService {
      */
     public long giveLike(int articleId,int userId){
         String key = RedisKeyConstant.LIKERECORD+articleId;
-        setOperations.add(key,userId);
+        setOperations.add(key,String.valueOf(userId));
         return setOperations.size(key);
     }
 
@@ -134,7 +134,7 @@ public class ArticleService {
      */
     public long cancelLike(int articleId,int userId){
         String key = RedisKeyConstant.LIKERECORD+articleId;
-        setOperations.remove(key,userId);
+        setOperations.remove(key,String.valueOf(userId));
         return setOperations.size(key);
     }
 }

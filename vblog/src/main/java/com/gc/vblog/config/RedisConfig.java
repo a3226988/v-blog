@@ -7,23 +7,37 @@ import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.SetOperations;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
+
+import javax.annotation.Resource;
 
 /**
  * Create by gc on 2020/7/4
  * 铁甲依然在
  */
 @Configuration
-public class RedisConfig {
+public class RedisConfig<K,V> {
 
-    @Autowired
-    RedisTemplate redisTemplate;
+    @Resource
+    RedisTemplate<K,V> redisTemplate;
 
     @Bean
-    public ValueOperations valueOperations(){
+    public ValueOperations<K,V> valueOperations(){
         return redisTemplate.opsForValue();
     }
     @Bean
-    public SetOperations listOperations(){
+    public SetOperations<K,V> listOperations(){
         return redisTemplate.opsForSet();
+    }
+
+    @Autowired(required = false)
+    public void setRedisTemplate(RedisTemplate redisTemplate) {
+        RedisSerializer stringSerializer = new StringRedisSerializer();
+        redisTemplate.setKeySerializer(stringSerializer);
+        redisTemplate.setValueSerializer(stringSerializer);
+        redisTemplate.setHashKeySerializer(stringSerializer);
+        redisTemplate.setHashValueSerializer(stringSerializer);
+        this.redisTemplate = redisTemplate;
     }
 }
